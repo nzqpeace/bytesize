@@ -37,3 +37,7 @@ func TestError(t *testing.T) {
 	assert.NotEqual(t, parse(t, "1.4M"), v)
 	assert.NotEqual(t, parse(t, "1Mb"), bytesize.MB+1)
 }
+
+func TestNegative(t *testing.T) {
+	assert.Equal(t, parse(t, "-1m"), -bytesize.MB)
+}

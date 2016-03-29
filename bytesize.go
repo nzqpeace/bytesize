@@ -17,7 +17,7 @@ const (
 	PB
 )
 
-var ByteSizeRegexp = regexp.MustCompile(`(?i)(\d+\.?\d*]?)([KMGTP]?B?)`)
+var ByteSizeRegexp = regexp.MustCompile(`(?i)(-?\d+\.?\d*]?)([KMGTP]?B?)`)
 
 func ByteSizeToString(b int64) string {
 	switch {
