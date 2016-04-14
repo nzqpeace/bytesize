@@ -1,6 +1,8 @@
 # bytesize
 The mutual conversion between digital and human-readable for byte size.
 
+[![Build Status](https://travis-ci.org/nzqpeace/bytesize.svg?branch=master)](https://travis-ci.org/nzqpeace/bytesize)
+
 ## Usage
 ```go
 // convert human-readable string to digital byte size.
